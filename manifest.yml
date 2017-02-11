@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: CognitiveDataIngestion
+  host: CognitiveDataIngestion
+  disk_quota: 1024M
+  services:
+  - CognitiveDataIngestion-cloudantNoSQLDB
+  - CognitiveDataIngestion-iotf-service
+  - AlchemyAPI-xv
+  - Natural Language Classifier-uy
